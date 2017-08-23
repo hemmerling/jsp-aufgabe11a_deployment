@@ -17,13 +17,17 @@ import javax.servlet.annotation.WebListener;
 //@WebListener()
 public class WebAppContextListenerXML2 implements ServletContextListener {
 
+    public WebAppContextListenerXML2() {
+        System.out.println("=============> " + this.getClass().getSimpleName());
+    }
+
     @Override
     public void contextInitialized(ServletContextEvent sce) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

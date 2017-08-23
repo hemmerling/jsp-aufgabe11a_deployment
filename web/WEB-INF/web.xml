@@ -4,24 +4,24 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     <!-- true: Annotationen werden ignoriert -->
-    <display-name>WebApp</display-name>
+    <display-name>aufgabe11a_deployment</display-name>
     
     <servlet>
-         <servlet-name>ServletXML1</servlet-name>
-         <servlet-path>com.hemmerling.aufgabe11a_deployment.controller.ServletXML1</servlet-path>
+         <servlet-name>WebAppServletXML1</servlet-name>
+         <servlet-class>com.hemmerling.aufgabe11a_deployment.controller.WebAppServletXML1</servlet-class>
     </servlet>
     <servlet-mapping>
-         <servlet-name>ServletXML1</servlet-name>
-         <url-pattern>/ServletXML1</url-pattern>
+         <servlet-name>WebAppServletXML1</servlet-name>
+         <url-pattern>/WebAppServletXML1</url-pattern>
     </servlet-mapping>
 
      <servlet>
-         <servlet-name>ServletXML2</servlet-name>
-         <servlet-path>com.hemmerling.aufgabe11a_deployment.controller.ServletXML2</servlet-path>
+         <servlet-name>WebAppServletXML2</servlet-name>
+         <servlet-class>com.hemmerling.aufgabe11a_deployment.controller.WebAppServletXML2</servlet-class>
     </servlet>
     <servlet-mapping>
-         <servlet-name>ServletXML2</servlet-name>
-         <url-pattern>/ServletXML2</url-pattern>
+         <servlet-name>WebAppServletXML2</servlet-name>
+         <url-pattern>/WebAppServletXML2</url-pattern>
     </servlet-mapping>
 
      <listener>
@@ -29,7 +29,7 @@
         <listener-class>com.hemmerling.aufgabe11a_deployment.controller.WebAppContextListenerXML1</listener-class>
     </listener>
     <listener>
-        <description>ServletContextListener</description>
+        <description>WebAppContextListenerXML2</description>
         <listener-class>com.hemmerling.aufgabe11a_deployment.controller.WebAppContextListenerXML2</listener-class>
     </listener>
     
@@ -43,54 +43,13 @@
     <param-value>Main-Obst</param-value>
   </context-param>-->
   
-    <filter>
-        <filter-name>MyFilterXml1</filter-name>
-        <filter-class>filter.MyFilterXml1</filter-class>
-    </filter>
-    <filter>
-        <filter-name>MyFilterXml2</filter-name>
-        <filter-class>filter.MyFilterXml2</filter-class>
-    </filter>
-    
-    <filter-mapping>
-      <filter-name>MyFilterXml1</filter-name>
-      <url-pattern>/*</url-pattern>
-    </filter-mapping>
-    
-    <filter-mapping>
-      <filter-name>MyFilterXml2</filter-name>
-      <url-pattern>/*</url-pattern>
-    </filter-mapping>
-    
-    
-    <context-param>
-        <param-name>email</param-name>
-        <param-value>admin@firma.de</param-value>
-    </context-param>
-    
-    <session-config>
+<!--    <session-config>
         <session-timeout>
             30
         </session-timeout>
-    </session-config>
+    </session-config>-->
     <!--<jsp-config></jsp-config>-->
     <!--<login-config></login-config>-->
-
-
-    <!--    
-    <filter>
-        <filter-name>struts2</filter-name>
-        <filter-class>
-            org.apache.struts2.dispatcher.FilterDispatcher
-        </filter-class>
-    </filter>
-
-    <filter-mapping>
-        <filter-name>struts2</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
-    -->
-
         
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
