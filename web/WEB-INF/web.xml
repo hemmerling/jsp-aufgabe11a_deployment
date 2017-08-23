@@ -4,7 +4,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     <!-- true: Annotationen werden ignoriert -->
-    <display-name>Hemmerling</display-name>
+    <display-name>WebApp</display-name>
     
     <servlet>
          <servlet-name>ServletXML1</servlet-name>
